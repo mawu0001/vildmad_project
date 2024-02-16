@@ -19,6 +19,30 @@
   nav {
     margin-right: 4rem;
   }
-}
 
+  /*Footer*/
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7rem;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+}
+input {
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+/*form style*/
+input.send {
+  background-color: var(--accent_col);
+  color: var(--font_col);
+  font-size: 1rem;
+  width: 70%;
+}
 /*burgermenu*/
