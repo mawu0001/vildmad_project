@@ -29,7 +29,7 @@
     margin: 2rem;
   }
 }
-
+/*form style*/
 form {
   display: flex;
   flex-direction: column;
@@ -40,7 +40,6 @@ input {
   margin-bottom: 0.8rem;
   width: 100%;
 }
-/*form style*/
 input.send {
   background-color: var(--accent_col);
   color: var(--font_col);
