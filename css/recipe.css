@@ -1,0 +1,24 @@
+@media (min-width: 700px) {
+  /*Header desktop*/
+  .mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background_col);
+    padding: 1rem;
+  }
+  .mainNav img {
+    padding-left: 2rem;
+  }
+  .mainNav a {
+    text-decoration: none;
+    color: var(--font_col);
+    padding-right: 2rem;
+    font-size: 1.5rem;
+  }
+  nav {
+    margin-right: 4rem;
+  }
+}
+
+/*burgermenu*/
