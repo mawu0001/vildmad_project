@@ -1,0 +1,9 @@
+html {
+  --font_col: #f9f6ee;
+  --background_col: #2b251f;
+  --accent_col: #d95829;
+}
+
+body {
+  color: var(--font_col);
+}
