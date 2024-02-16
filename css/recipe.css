@@ -22,13 +22,33 @@
   }
 
   /*Footer*/
-  footer {
+  footer.logo_form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2rem;
+  }
+  .footer_logo img {
+    width: 50%;
+    padding-bottom: 2rem;
+  }
+  .footer_ikoner img {
+    width: 30%;
+  }
+  footer {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
+/*footer mobil*/
+footer {
+  text-align: center;
+}
+
+.footer_logo img,
+.footer_ikoner img {
+  width: 30%;
+}
+
 /*form style*/
 form {
   display: flex;
