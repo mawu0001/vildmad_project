@@ -23,6 +23,17 @@ html {
   --autumn: #e18848;
 }
 
+#winter_hero,
+#spring_hero,
+#summer_hero,
+#autumn_hero {
+  border-radius: 0;
+  width: 100%;
+}
+.opacity {
+  opacity: 40%;
+}
+
 #menu1 {
   background-color: var(--winter);
 }
@@ -76,6 +87,7 @@ li {
 .menucardflex1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .flexitem1 {
@@ -94,6 +106,7 @@ li {
 
   .menucardflex1 {
     display: flex;
+    justify-content: space-around;
   }
 }
 
