@@ -1,0 +1,14 @@
+/* Styling body */
+* {
+    box-sizing: border-box;
+}
+
+/* Hero img - Firefly solarpunk styled closeup overgrown skillet cooking mushrooms*/
+.hero_img {
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 1rem;
+}

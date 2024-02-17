@@ -9,6 +9,7 @@ body {
   color: var(--font_col);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 h1 {
   font-size: 3rem;
   font-family: Arial black;
@@ -24,4 +25,10 @@ h3 {
 
 p {
   font-size: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
