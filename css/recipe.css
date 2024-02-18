@@ -41,28 +41,20 @@
 }
 /*footer mobil*/
 footer {
-  text-align: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer_logo img,
 .footer_ikoner img {
   width: 30%;
-  text-align: center;
 }
-.logo_form {
-  display: flex;
-  justify-content: center;
-}
-
 /*form style*/
 form {
   display: flex;
   flex-direction: column;
   width: 12rem;
-  text-align: center;
 }
 input {
   margin-top: 0.2rem;
@@ -76,3 +68,8 @@ input.send {
   width: 70%;
 }
 /*burgermenu*/
+/*menu i mobil*/
+.mainNav img {
+  padding-left: 2rem;
+  width: 30%;
+}
