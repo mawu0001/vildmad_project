@@ -23,6 +23,22 @@ html {
   --autumn: #e18848;
 }
 
+p {
+  max-width: 65ch;
+}
+
+body {
+}
+
+.seasons {
+  padding: 2rem;
+}
+
+.seasons h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 #winter_hero,
 #spring_hero,
 #summer_hero,
@@ -32,6 +48,19 @@ html {
 }
 .opacity {
   opacity: 40%;
+}
+
+.art_winter {
+  position: relative;
+}
+.winter_txt {
+  position: absolute;
+  top: 25%;
+  padding: 2rem;
+}
+
+.menucard {
+  padding: 2rem;
 }
 
 #menu1 {
