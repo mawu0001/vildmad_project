@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   --font_col: #f9f6ee;
   --background_col: #2b251f;
