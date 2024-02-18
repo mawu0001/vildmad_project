@@ -2,21 +2,57 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/recipes.css" />
+    <title>Recipes</title>
+  </head>
 
+  <body>
+    <header></header>
+    <main>
+      <section class="hero_img">
+        <img
+          src="images/hero_img_recipies.jpg"
+          alt="AI styled closeup overgrown skillet cooking mushrooms"
+        />
+      </section>
+      <section class="h1">
+        <h1>RECIPES</h1>
+      </section>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/generel.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <title>Recipes</title>
-</head>
-
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-  <script src="scripts/recipe.js"></script>
-</body>
-
+      <!-- menu knappar & sidor -->
+      <!-- <div class="flex">
+        <a href="#section" id="winterKnap" onclick="showMenu1()">
+          <div class="CTA2">Winter</div>
+        </a>
+        <a href="#section" id="springKnap" onclick="showMenu2()">
+          <div class="CTA2">Spring</div>
+        </a>
+        <a href="#section" id="summerKnap" onclick="showMenu3()">
+          <div class="CTA2">Summer</div>
+        </a>
+        <a href="#section" id="autumKnap" onclick="showMenu4()">
+          <div class="CTA2">Autum</div>
+        </a>
+      </div> -->
+      <section>
+        <div class="recipes_container"></div>
+        <template class="recipes_template">
+          <article class="recipes_article">
+            <div class="recipes_img_container">
+              <img class="recipes_img" src="" alt="" />
+            </div>
+            <h4 class="recipes_name"></h4>
+          </article>
+        </template>
+      </section>
+    </main>
+    <footer><p>&#169; Jacob, Marie, Nora & Mathilde, Spring 2024</p></footer>
+    <script src="scripts/recipes.js"></script>
+  </body>
 </html>

@@ -1,0 +1,58 @@
+/* Styling body */
+* {
+    box-sizing: border-box;
+}
+
+/* Hero img - Firefly solarpunk styled closeup overgrown skillet cooking mushrooms*/
+.hero_img {
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 1rem;
+}
+
+/* h1 styling */
+.h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Recipes card styling */
+@media screen and (min-width: 660px) {
+    .recipes_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .recipes_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+.recipes_article {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recipes_img_container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.recipes_img {
+    max-width: 100%;
+}
