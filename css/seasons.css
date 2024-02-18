@@ -113,7 +113,8 @@ ul {
 li {
   list-style: none;
 }
-.menucardflex1 {
+.menucardflex1,
+.planContainer1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -133,9 +134,12 @@ li {
     display: grid;
   }
 
-  .menucardflex1 {
+  .menucardflex1,
+  .planContainer1 {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
