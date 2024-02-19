@@ -90,8 +90,8 @@ function showData(recipes){
     recipesTemplate = document.querySelector(".recipes_template");
     console.log("recipes_template", recipesTemplate);
 
-    recipesContainer = document.querySelector(".recipes_container");
-    console.log("recipes_container", recipesContainer)
+    recipesContainer = document.querySelector(".recipesWinter_container");
+    console.log("recipesWinter_container", recipesContainer)
 
     fetch(recipesURL)
     .then(function (response) {
@@ -114,9 +114,25 @@ function showRecipes(recipesJSON){
           productClone.querySelector(".recipes_img").alt = `Picture of a ${recipe.title_name} the product`;
           productClone.querySelector(".recipes_name").textContent = recipe.title_name;
 
-          document.querySelector(".recipesWinter_container").appendChild(productClone);
-
-
+         
+          // recipesContainer.appendChild(productClone);
+          if(recipe.seasons_winter === 1) {
+            document.querySelector(".recipesWinter_container").appendChild(productClone);
+          } 
+          
+          else if (recipe.seasons_spring === 2) {
+            document.querySelector(".recipesSpring_container").appendChild(productClone);
+          } 
+          
+          else if (recipe.seasons_summer === 3) {
+            document.querySelector(".recipesSummer_container").appendChild(productClone);
+          } 
+          
+          else if (recipe.seasons_autumn === 4){
+            document.querySelector(".recipesAutumn_container").appendChild(productClone);
+          }
+          
+          
 
           // if (recipe.seasons.winter){
           //   productClone.querySelector(".recipesWinter_container").textContent = recipe.seasons.winter;
@@ -130,11 +146,11 @@ function showRecipes(recipesJSON){
           
         //   if(recipe.seasons === winter) {
         //   document.querySelector(".recipesWinter_container").appendChild(productClone);
-        // } else (recipe.seasons === spring) {
+        // } else if (recipe.seasons === spring) {
         //     document.querySelector(".recipesSpring_container").appendChild(productClone);
-        //   } else (recipe.seasons === summer){
+        //   } else if (recipe.seasons === summer){
         //     document.querySelector(".recipesSummer_container").appendChild(productClone);
-        //   } else (recipe.seasons === autumn) {
+        //   } else if (recipe.seasons === autumn) {
         //     document.querySelector(".recipesAutumn_container").appendChild(productClone);
         //   }
 
