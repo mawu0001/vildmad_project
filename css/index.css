@@ -1,3 +1,68 @@
 .hero_img_front {
-  background-image: image();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section_intro {
+  background-color: var(--accent_col);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.section_intro h1 {
+  text-align: center;
+  padding-top: 7px;
+}
+
+.front_img_container {
+  position: relative;
+  text-align: center;
+  color: var(--font_col);
+}
+
+.front_img_container img {
+  aspect-ratio: 16/9;
+  opacity: 50%;
+}
+
+p {
+  padding: 30px;
+  line-height: 1.5srem;
+}
+
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font_col);
+}
+
+@media screen and (min-width: 660px) {
+  .section_intro {
+    padding: 100px;
+  }
+
+  .frontpage_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .front_img_container img:hover {
+    opacity: 90%;
+    cursor: pointer;
+  }
+
+  p {
+    line-height: 1.7rem;
+    max-width: 950px;
+    margin: auto;
+  }
 }
