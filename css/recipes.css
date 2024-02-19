@@ -20,7 +20,7 @@
 }
 
 /* Recipes card styling */
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 700px) {
     .recipes_container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 700px) {
     .recipes_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
