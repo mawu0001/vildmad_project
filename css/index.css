@@ -22,11 +22,26 @@ nav {
   margin-right: 4rem;
 }
 
+.front_img {
+  position: relative;
+}
+
 .hero_img_front {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  opacity: 90%;
+}
+
+.hero_img_text {
+  position: absolute;
+  top: 325px;
+  left: 50px;
+  z-index: 1;
+  color: var(--font_col);
+  border: 1px solid var(--font_col);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .section_intro {
@@ -122,7 +137,6 @@ footer {
 }
 
 @media (max-width: 700px) {
-
   /*footer mobil*/
   footer {
     display: flex;
