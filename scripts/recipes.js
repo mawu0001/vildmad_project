@@ -1,7 +1,3 @@
-// https://rlrnltlgmzclzpyumxli.supabase.co
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8
-
-//Intern menu
 window.addEventListener("load", sidenVises);
 
 //forkortelser
@@ -70,10 +66,6 @@ function showMenu4() {
   menu4Knap.firstElementChild.classList.add("selected");
 }
 
-// Til at se om der er forbindelse til serveren:
-console.log("Go sustainability");
-
-// Fetche dataen fra givne API m. promise:
 window.addEventListener("DOMContentLoaded", showData);
 
 // Konstaere API'en via ULR-link:
