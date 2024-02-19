@@ -92,3 +92,7 @@ input.send {
 .h1 h1 {
   font-size: 2rem;
 }
+.grid_1-1 {
+  display: flex;
+  flex-direction: row;
+}
