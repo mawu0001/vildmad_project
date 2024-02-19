@@ -116,21 +116,33 @@ function showRecipes(recipesJSON){
 
          
           // recipesContainer.appendChild(productClone);
-          if(recipe.seasons_winter === 1) {
+          if(recipe.january === 1) {
+            document.querySelector(".recipesWinter_container").appendChild(productClone);
+          } 
+
+          if(recipe.february === 1) {
             document.querySelector(".recipesWinter_container").appendChild(productClone);
           } 
           
-          else if (recipe.seasons_spring === 2) {
+         if (recipe.march === 1) {
             document.querySelector(".recipesSpring_container").appendChild(productClone);
           } 
           
-          else if (recipe.seasons_summer === 3) {
+          if (recipe.april === 1) {
+            document.querySelector(".recipesSpring_container").appendChild(productClone);
+          } 
+
+          if (recipe.may === 1) {
+            document.querySelector(".recipesSpring_container").appendChild(productClone);
+          } 
+
+          if (recipe.june === 1) {
             document.querySelector(".recipesSummer_container").appendChild(productClone);
           } 
           
-          else if (recipe.seasons_autumn === 4){
-            document.querySelector(".recipesAutumn_container").appendChild(productClone);
-          }
+          // else if (recipe.seasons_autumn === 4){
+          //   document.querySelector(".recipesAutumn_container").appendChild(productClone);
+          // }
           
           
 
