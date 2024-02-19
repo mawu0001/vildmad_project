@@ -56,23 +56,22 @@ function showRecipes(recipesJSON){
       }); 
   }
 
-// }
 
-// //Intern menu
-// window.addEventListener("load", sidenVises);
+//Intern menu
+window.addEventListener("load", sidenVises);
 
-// //forkortelser
-// const winter = document.querySelector("#winter");
-// const spring = document.querySelector("#spring");
-// const summer = document.querySelector("#summer");
-// const autum = document.querySelector("#autum");
+//forkortelser
+const winter = document.querySelector("#winter");
+const spring = document.querySelector("#spring");
+const summer = document.querySelector("#summer");
+const autum = document.querySelector("#autum");
 
-// const winterKnap = document.querySelector("#winterKnap");
-// const springKnap = document.querySelector("#springKnap");
-// const summerKnap = document.querySelector("#summerKnap");
-// const autumKnap = document.querySelector("#autumKnap");
+const winterKnap = document.querySelector("#winterKnap");
+const springKnap = document.querySelector("#springKnap");
+const summerKnap = document.querySelector("#summerKnap");
+const autumKnap = document.querySelector("#autumKnap");
 
-// function sidenVises() {
-//     console.log("sidenVises");
-//     showMenu1();
-//   }
+function sidenVises() {
+    console.log("sidenVises");
+    showMenu1();
+  }
