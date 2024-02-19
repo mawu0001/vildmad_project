@@ -41,6 +41,18 @@ function showData(recipes){
     });
 }
 
+// function showRecipes(recipes) {
+//     //fange temp
+//     const Template = document.querySelector(".recipes_template").content;
+//     //lav kopi
+//     const copy = Template.cloneNode(true);
+//     //ændre indhold
+//     copy.querySelector(".recipes_name").textContent = recipes.title_name;
+//     copy.querySelector(".recipes_img").src = recipes.img;
+//     //apende
+//     document.querySelector(".recipesContainer1").appendChild(copy);
+//   }
+
 function showRecipes(recipesJSON){
     let productClone;
   
@@ -61,17 +73,77 @@ function showRecipes(recipesJSON){
 window.addEventListener("load", sidenVises);
 
 //forkortelser
-const winter = document.querySelector("#winter");
-const spring = document.querySelector("#spring");
-const summer = document.querySelector("#summer");
-const autum = document.querySelector("#autum");
+const menu1 = document.querySelector("#menu1");
+const menu2 = document.querySelector("#menu2");
+const menu3 = document.querySelector("#menu3");
+const menu4 = document.querySelector("#menu4");
 
-const winterKnap = document.querySelector("#winterKnap");
-const springKnap = document.querySelector("#springKnap");
-const summerKnap = document.querySelector("#summerKnap");
-const autumKnap = document.querySelector("#autumKnap");
+const menu1Knap = document.querySelector("#menu1Knap");
+const menu2Knap = document.querySelector("#menu2Knap");
+const menu3Knap = document.querySelector("#menu3Knap");
+const menu4Knap = document.querySelector("#menu4Knap");
 
 function sidenVises() {
-    console.log("sidenVises");
-    showMenu1();
-  }
+  console.log("sidenVises");
+  showMenu1();
+}
+
+function showMenu1() {
+  console.log("Menu1 vises");
+
+  //Gør menu synlig
+  menu1.style.display = "inherit";
+  menu2.style.display = "none";
+  menu3.style.display = "none";
+  menu4.style.display = "none";
+
+  //Styling af knappen
+  menu1Knap.firstElementChild.classList.add("selected");
+  menu2Knap.firstElementChild.classList = "CTA2";
+  menu3Knap.firstElementChild.classList = "CTA2";
+  menu4Knap.firstElementChild.classList = "CTA2";
+}
+
+function showMenu2() {
+  console.log("Menu2 vises");
+
+  menu1.style.display = "none";
+  menu2.style.display = "inherit";
+  menu3.style.display = "none";
+  menu4.style.display = "none";
+
+  //Styling af knappen
+  //Styling af knappen
+  menu1Knap.firstElementChild.classList = "CTA2";
+  menu2Knap.firstElementChild.classList.add("selected");
+  menu3Knap.firstElementChild.classList = "CTA2";
+  menu4Knap.firstElementChild.classList = "CTA2";
+}
+function showMenu3() {
+  console.log("Menu3 vises");
+
+  menu1.style.display = "none";
+  menu2.style.display = "none";
+  menu3.style.display = "inherit";
+  menu4.style.display = "none";
+
+  //Styling af knappen
+  menu1Knap.firstElementChild.classList = "CTA2";
+  menu2Knap.firstElementChild.classList = "CTA2";
+  menu3Knap.firstElementChild.classList.add("selected");
+  menu4Knap.firstElementChild.classList = "CTA2";
+}
+function showMenu4() {
+  console.log("Menu4 vises");
+
+  menu1.style.display = "none";
+  menu2.style.display = "none";
+  menu3.style.display = "none";
+  menu4.style.display = "inherit";
+
+  //Styling af knappen
+  menu1Knap.firstElementChild.classList = "CTA2";
+  menu2Knap.firstElementChild.classList = "CTA2";
+  menu3Knap.firstElementChild.classList = "CTA2";
+  menu4Knap.firstElementChild.classList.add("selected");
+}
