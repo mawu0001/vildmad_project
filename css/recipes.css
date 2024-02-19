@@ -1,120 +1,119 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* variable af farver */
 html {
-  --winter: #83b7c7;
-  --spring: #bdc783;
-  --summer: #fccf5b;
-  --autumn: #e18848;
+    --winter: #83b7c7;
+    --spring: #bdc783;
+    --summer: #fccf5b;
+    --autumn: #e18848;
 }
 
 /* Styling body */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Hero img - Firefly solarpunk styled closeup overgrown skillet cooking mushrooms*/
 .hero_img {
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-/* h1 styling */
+/* h1, h2 styling */
 .h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section h2 {
+    padding: 2.5rem;
 }
 
 /* knap og menu styling */
 #menu1 {
-  background-color: var(--winter);
+    background-color: var(--winter);
 }
 
 #menu1Knap {
-  background-color: var(--winter);
+    background-color: var(--winter);
 }
 
 #menu2 {
-  background-color: var(--spring);
+    background-color: var(--spring);
 }
 
 #menu2Knap {
-  background-color: var(--spring);
+    background-color: var(--spring);
 }
 
 #menu3 {
-  background-color: var(--summer);
+    background-color: var(--summer);
 }
 
 #menu3Knap {
-  background-color: var(--summer);
+    background-color: var(--summer);
 }
 
 #menu4 {
-  background-color: var(--autumn);
+    background-color: var(--autumn);
 }
 
 #menu4Knap {
-  background-color: var(--autumn);
+    background-color: var(--autumn);
 }
 
 #menu1Knap,
 #menu2Knap,
 #menu3Knap,
 #menu4Knap {
-  border-radius: 1rem 1rem 0 0;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  margin-left: 0.5rem;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 0.5rem;
 }
 
 .flex {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* Recipes card styling */
 @media screen and (min-width: 700px) {
-  .recipesWinter_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-  }
+    .recipesWinter_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 700px) {
-  .recipesWinter_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
+    .recipesWinter_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .recipes_article {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipes_article p {
+    padding-left: 0.5rem;
 }
 
 .recipes_img_container {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem;
 }
 
 .recipes_img {
-  max-width: 100%;
+    max-width: 100%;
 }
