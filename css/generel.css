@@ -17,24 +17,43 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: Arial black;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
-h3 {
-  font-size: 1.5rem;
-}
+/* h3 {
+  font-size: rem;
+} */
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+    font-family: Arial black;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
