@@ -55,3 +55,52 @@
 .recipes_img {
     max-width: 100%;
 }
+
+/* knap og menu styling */
+html {
+    --winter: #83b7c7;
+    --spring: #bdc783;
+    --summer: #fccf5b;
+    --autumn: #e18848;
+}
+
+#menu1 {
+    background-color: var(--winter);
+}
+
+#menu1Knap {
+    background-color: var(--winter);
+}
+
+#menu2 {
+    background-color: var(--spring);
+}
+
+#menu2Knap {
+    background-color: var(--spring);
+}
+
+#menu3 {
+    background-color: var(--summer);
+}
+
+#menu3Knap {
+    background-color: var(--summer);
+}
+
+#menu4 {
+    background-color: var(--autumn);
+}
+
+#menu4Knap {
+    background-color: var(--autumn);
+}
+
+#menu1Knap,
+#menu2Knap,
+#menu3Knap,
+#menu4Knap {
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 0.5rem;
+}

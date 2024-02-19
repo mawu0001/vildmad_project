@@ -27,8 +27,7 @@ p {
   max-width: 65ch;
 }
 
-body {
-}
+body {}
 
 .seasons {
   padding: 2rem;
@@ -46,6 +45,7 @@ body {
   border-radius: 0;
   width: 100%;
 }
+
 .opacity {
   opacity: 40%;
 }
@@ -53,6 +53,7 @@ body {
 .art_winter {
   position: relative;
 }
+
 .winter_txt {
   position: absolute;
   top: 25%;
@@ -66,6 +67,7 @@ body {
 #menu1 {
   background-color: var(--winter);
 }
+
 #menu1Knap {
   background-color: var(--winter);
 }
@@ -73,6 +75,7 @@ body {
 #menu2 {
   background-color: var(--spring);
 }
+
 #menu2Knap {
   background-color: var(--spring);
 }
@@ -80,6 +83,7 @@ body {
 #menu3 {
   background-color: var(--summer);
 }
+
 #menu3Knap {
   background-color: var(--summer);
 }
@@ -113,6 +117,7 @@ ul {
 li {
   list-style: none;
 }
+
 .menucardflex1,
 .planContainer1 {
   display: grid;
