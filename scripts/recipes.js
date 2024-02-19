@@ -114,6 +114,20 @@ function showRecipes(recipesJSON){
           productClone.querySelector(".recipes_img").alt = `Picture of a ${recipe.title_name} the product`;
           productClone.querySelector(".recipes_name").textContent = recipe.title_name;
         
+          
+          if(recipe.seasons === winter) {
           document.querySelector(".recipesWinter_container").appendChild(productClone);
+        } 
+        if(recipe.seasons === spring) {
+            document.querySelector(".recipesSpring_container").appendChild(productClone);
+          } 
+          
+          if(recipe.seasons === summer){
+            document.querySelector(".recipesSummer_container").appendChild(productClone);
+          } 
+          
+          if(recipe.seasons === autumn) {
+            document.querySelector(".recipesAutumn_container").appendChild(productClone);
+          }
       }); 
   }
