@@ -53,6 +53,11 @@
   .footer_ikoner img {
     width: 20%;
   }
+  /*header i mobil*/
+  .mainNav img {
+    padding-left: 2rem;
+    width: 40%;
+  }
 }
 /*form style*/
 form {
@@ -71,9 +76,19 @@ input.send {
   font-size: 1rem;
   width: 70%;
 }
-/*burgermenu*/
-/*menu i mobil*/
-.mainNav img {
-  padding-left: 2rem;
-  width: 40%;
+
+.hero_img {
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* h1 styling */
+.h1 {
+  background-color: var(--accent_col);
+  padding: 1rem;
+}
+.h1 h1 {
+  font-size: 2rem;
 }
