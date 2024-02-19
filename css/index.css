@@ -30,12 +30,12 @@ nav {
   background-color: var(--accent_col);
   text-align: left;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .section_intro h1 {
-  text-align: left;
-  padding-top: 7px;
-  padding-left: 170px;
+  text-align: center;
+  padding-top: 10px;
   text-transform: uppercase;
 }
 
@@ -52,7 +52,7 @@ nav {
 
 p {
   padding: 30px;
-  line-height: 1.5srem;
+  line-height: 1.5rem;
 }
 
 h2 {
@@ -87,6 +87,10 @@ a {
     line-height: 1.7rem;
     max-width: 950px;
     margin: auto;
+  }
+  .section_intro h1 {
+    text-align: left;
+    padding-left: 170px;
   }
 }
 
