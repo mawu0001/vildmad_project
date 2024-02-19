@@ -1,5 +1,7 @@
 /* Styling body */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -103,4 +105,9 @@ html {
     border-radius: 1rem 1rem 0 0;
     padding: 0.5rem 1rem 0.5rem 1rem;
     margin-left: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
 }
