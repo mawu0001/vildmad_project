@@ -116,22 +116,37 @@ function showRecipes(recipesJSON){
 
           document.querySelector(".recipesWinter_container").appendChild(productClone);
 
-        
-        
+
+
+          // if (recipe.seasons.winter){
+          //   productClone.querySelector(".recipesWinter_container").textContent = recipe.seasons.winter;
+          // } else if(recipe.seasons.spring){
+          //   productClone.querySelector(".recipesSpring_container").textContent = recipe.seasons.spring;
+          // } else if(recipe.seasons.summer){
+          //   productClone.querySelector(".recipesSummer_container").textContent = recipe.seasons.summer;
+          // } else if(recipe.seasons.autumn){
+          //   productClone.querySelector(".recipesAutumn_container").textContent = recipe.seasons.autumn;
+          // } 
           
         //   if(recipe.seasons === winter) {
         //   document.querySelector(".recipesWinter_container").appendChild(productClone);
-        // } 
-        // if(recipe.seasons === spring) {
+        // } else (recipe.seasons === spring) {
         //     document.querySelector(".recipesSpring_container").appendChild(productClone);
-        //   } 
-          
-        //   if(recipe.seasons === summer){
+        //   } else (recipe.seasons === summer){
         //     document.querySelector(".recipesSummer_container").appendChild(productClone);
-        //   } 
-          
-        //   if(recipe.seasons === autumn) {
+        //   } else (recipe.seasons === autumn) {
         //     document.querySelector(".recipesAutumn_container").appendChild(productClone);
         //   }
+
+        // Betingelser for at tilføje opskriften til den passende container baseret på årstiden
+        // if(recipe.seasons === "winter") {
+        //     document.querySelector(".recipesWinter_container").appendChild(productClone);
+        // } else if (recipe.seasons === "spring") {
+        //     document.querySelector(".recipesSpring_container").appendChild(productClone);
+        // } else if (recipe.seasons === "summer"){
+        //     document.querySelector(".recipesSummer_container").appendChild(productClone);
+        // } else if (recipe.seasons === "autumn") {
+        //     document.querySelector(".recipesAutumn_container").appendChild(productClone);
+        // }
       }); 
   }
