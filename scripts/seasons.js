@@ -69,8 +69,7 @@ function showMenu4() {
 fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants", {
   method: "GET",
   headers: {
-    apikey:
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8",
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8",
   },
 })
   .then((res) => res.json())
@@ -85,7 +84,7 @@ function showPlants(plantJSON) {
     copy.querySelector(".plant_title").textContent = plants.title;
     copy.querySelector(".plantImg").src = plants.profile_image;
     copy.querySelector(".plantImg").alt = `picture of a ${plants.title}`;
-    // copy.querySelector(".link").setAttribute("href", `plant.html?id=${plants.id}`);
+    copy.querySelector(".link").setAttribute("href", `plant.html?id=${plants.id}`);
 
     if (plants.months) {
       //   document.querySelector("#december_container").appendChild(copy);
