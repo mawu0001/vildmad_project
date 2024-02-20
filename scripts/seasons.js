@@ -66,7 +66,13 @@ function showMenu4() {
   menu4Knap.firstElementChild.classList.add("selected");
 }
 
-fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants", {
+const params = new URLSearchParams(window.location.search);
+const season = params.get("season");
+console.log(season);
+
+const url = `https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants?seasons=ilike.*${season}*`;
+
+fetch(url, {
   method: "GET",
   headers: {
     apikey:
@@ -92,7 +98,7 @@ function showPlants(plantJSON) {
       //   document.querySelector("#december_container").appendChild(copy);
     }
 
-    document.querySelector("#december_container").appendChild(copy);
+    document.querySelector(`#container`).appendChild(copy);
   });
 }
 
