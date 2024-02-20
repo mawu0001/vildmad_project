@@ -73,21 +73,41 @@ fetch(
   .then(showPlants);
 
 function showPlants(plants) {
-  // looper og kalder plant
-  plants.forEach(showPlant);
+  plants.forEach((plant) => {
+    const Template = document.querySelector(".plantTemplate").content;
+    const copy = Template.cloneNode(true);
+
+    //ændre indhold
+    copy.querySelector(".plant_title").textContent = plant.title;
+    copy.querySelector(".plantImg").src = plant.profile_image;
+    copy.querySelector(".plantImg").alt = `picture of a ${plant.title}`;
+    // copy.querySelector(".link").setAttribute("href", `plant.html?id=${plants.id}`);
+
+    if (plant.months.december) {
+      document.querySelector("#december_container").appendChild(copy);
+    }
+  });
 }
 
-function showPlant(plant) {
-  //fange temp
-  const Template = document.querySelector(".plantTemplate").content;
-  //lav kopi
-  const copy = Template.cloneNode(true);
-  //ændre indhold
-  copy.querySelector(".mr").textContent = plant.title;
-  copy.querySelector(".plantImg").src = plant.profile_image;
-  //apende
-  document.querySelector(".planContainer1").appendChild(copy);
-}
+// function showPlants(plants) {
+//   // looper og kalder plant
+//   plants.forEach(showPlant);
+// }
+
+// function showPlant(plant) {
+//   //fange temp
+//   const Template = document.querySelector(".plantTemplate").content;
+//   //lav kopi
+//   const copy = Template.cloneNode(true);
+//   //ændre indhold
+//   copy.querySelector(".mr").textContent = plant.title;
+//   copy.querySelector(".plantImg").src = plant.profile_image;
+
+//   if (plant.months.january) {
+//     //apende
+//     document.querySelector("#januar_container").appendChild(copy);
+//   }
+// }
 
 /*
           <article>
@@ -111,7 +131,7 @@ function showPlant(plant) {
  {
   "id": 399,
   "title": "Sea beet",
-  "seasons": "february, march, april, may",
+  "months": "february, march, april, may",
   "sankelandskaber_title": "Watercourse",
   "sankelandskaber_id": 173,
   "profile_image": "https://vildmadv2.vps.webdock.io/application/files/4316/2451/9319/Strandbede_ravarekort_app.png",
