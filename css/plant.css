@@ -37,7 +37,7 @@ nav {
   margin: auto;
 }
 
-.plant_description h1 {
+.plant_titel {
   margin-bottom: 30px;
 }
 
@@ -70,7 +70,7 @@ nav {
   line-height: 1.3rem;
 }
 
-p {
+.p_description {
   padding: 3px 0;
 }
 
@@ -102,7 +102,7 @@ h2 {
     width: 6rem;
     margin: auto;
   }
-  .plant_description h1 {
+  .plant_titel {
     margin-bottom: 60px;
   }
 
