@@ -25,6 +25,13 @@ nav {
 
 /* slut nav */
 
+.hero_img_plant {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 27/9;
+  background-size: cover;
+}
+
 .plant_container {
   background-color: var(--accent_col);
   display: grid;
@@ -43,7 +50,8 @@ nav {
 
 .description_img {
   border-radius: 100%;
-  max-width: 65%;
+  max-width: 100%;
+  height: auto;
   margin: auto;
 }
 
@@ -104,6 +112,14 @@ h2 {
   }
   .plant_titel {
     margin-bottom: 60px;
+  }
+
+  .description_img {
+    max-width: 80%;
+  }
+
+  .plant_description {
+    line-height: 1.8;
   }
 
   .text_span {
