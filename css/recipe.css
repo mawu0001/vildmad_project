@@ -53,6 +53,7 @@
   .directions {
     margin-left: 3rem;
     margin-right: 4rem;
+    width: 70%;
   }
 }
 
@@ -107,8 +108,16 @@ input.send {
 .h1 h1 {
   font-size: 2rem;
 }
+ol {
+  line-height: 1.5;
+}
+li {
+  padding-bottom: 0.5rem;
+}
+
 ul {
   list-style-type: none;
+  line-height: 1.5;
 }
 .info {
   padding-left: 2rem;
@@ -117,6 +126,7 @@ ul {
 
 .ingredients {
   padding-left: 2rem;
+  padding-right: 1rem;
 }
 .directions {
   padding-left: 2rem;
