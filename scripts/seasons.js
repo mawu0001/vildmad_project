@@ -81,7 +81,9 @@ function showPlants(plants) {
     copy.querySelector(".plant_title").textContent = plant.title;
     copy.querySelector(".plantImg").src = plant.profile_image;
     copy.querySelector(".plantImg").alt = `picture of a ${plant.title}`;
-    // copy.querySelector(".link").setAttribute("href", `plant.html?id=${plants.id}`);
+    copy
+      .querySelector(".link")
+      .setAttribute("href", `plant.html?id=${plants.id}`);
 
     if (plant.months.december) {
       document.querySelector("#december_container").appendChild(copy);
