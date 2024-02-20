@@ -77,6 +77,7 @@ fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants", {
 
 function showPlants(plantJSON) {
   plantJSON.forEach((plants) => {
+    // henter indhold
     const Template = document.querySelector(".plantTemplate").content;
     const copy = Template.cloneNode(true);
 
