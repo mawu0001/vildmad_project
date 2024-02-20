@@ -115,7 +115,8 @@ section h2 {
 }
 
 .recipes_img_container {
-    max-width: 100%;
+    max-height: 17rem;
+    overflow: hidden;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -125,4 +126,90 @@ section h2 {
 
 .recipes_img {
     max-width: 100%;
+}
+
+/*header
+
+@media (min-width: 700px) {
+  /*Header desktop*/
+.mainNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background_col);
+    padding: 1rem;
+}
+
+.mainNav img {
+    padding-left: 2rem;
+    width: 67%;
+}
+
+.mainNav a {
+    text-decoration: none;
+    color: var(--font_col);
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+nav {
+    margin-right: 4rem;
+}
+
+@media (max-width: 700px) {
+
+    /*header i mobil*/
+    .mainNav img {
+        padding-left: 2rem;
+        width: 40%;
+    }
+}
+
+/* Bruger menu */
+.burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+
+.burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent_col);
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        transition: 0.2s linear;
+    }
+
+    .burger.active .line:nth-child(2) {
+        opacity: 0;
+        transition: 0.15s linear;
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        transition: 0.2s linear;
+    }
+
 }

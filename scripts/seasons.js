@@ -66,28 +66,54 @@ function showMenu4() {
   menu4Knap.firstElementChild.classList.add("selected");
 }
 
-fetch(
-  "https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8"
-)
+fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants", {
+  method: "GET",
+  headers: {
+    apikey:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8",
+  },
+})
   .then((res) => res.json())
   .then(showPlants);
 
-function showPlants(plants) {
-  // looper og kalder plant
-  plants.forEach(showPlant);
+function showPlants(plantJSON) {
+  plantJSON.forEach((plants) => {
+    const Template = document.querySelector(".plantTemplate").content;
+    const copy = Template.cloneNode(true);
+
+    //ændre indhold
+    copy.querySelector(".plant_title").textContent = plants.title;
+    copy.querySelector(".plantImg").src = plants.profile_image;
+    copy.querySelector(".plantImg").alt = `picture of a ${plants.title}`;
+    // copy.querySelector(".link").setAttribute("href", `plant.html?id=${plants.id}`);
+
+    if (plants.months) {
+      //   document.querySelector("#december_container").appendChild(copy);
+    }
+
+    document.querySelector("#december_container").appendChild(copy);
+  });
 }
 
-function showPlant(plant) {
-  //fange temp
-  const Template = document.querySelector(".plantTemplate").content;
-  //lav kopi
-  const copy = Template.cloneNode(true);
-  //ændre indhold
-  copy.querySelector(".mr").textContent = plant.title;
-  copy.querySelector(".plantImg").src = plant.profile_image;
-  //apende
-  document.querySelector(".planContainer1").appendChild(copy);
-}
+// function showPlants(plants) {
+//   // looper og kalder plant
+//   plants.forEach(showPlant);
+// }
+
+// function showPlant(plant) {
+//   //fange temp
+//   const Template = document.querySelector(".plantTemplate").content;
+//   //lav kopi
+//   const copy = Template.cloneNode(true);
+//   //ændre indhold
+//   copy.querySelector(".mr").textContent = plant.title;
+//   copy.querySelector(".plantImg").src = plant.profile_image;
+
+//   if (plant.months.january) {
+//     //apende
+//     document.querySelector("#januar_container").appendChild(copy);
+//   }
+// }
 
 /*
           <article>
@@ -111,7 +137,7 @@ function showPlant(plant) {
  {
   "id": 399,
   "title": "Sea beet",
-  "seasons": "february, march, april, may",
+  "months": "february, march, april, may",
   "sankelandskaber_title": "Watercourse",
   "sankelandskaber_id": 173,
   "profile_image": "https://vildmadv2.vps.webdock.io/application/files/4316/2451/9319/Strandbede_ravarekort_app.png",

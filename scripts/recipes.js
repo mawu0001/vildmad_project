@@ -66,11 +66,15 @@ function showMenu4() {
   menu4Knap.firstElementChild.classList.add("selected");
 }
 
+// Fetche dataen fra givne API m. promise:
 window.addEventListener("DOMContentLoaded", showData);
+
+const parameter = new URLSearchParams(window.location.search);
+const seasons = parameter.get("seasons");
+console.log(seasons);
 
 // Konstaere API'en via ULR-link:
 const recipesURL = `https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipes?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8`;
-
 let recipesTemplate;
 let recipesContainer;
 
@@ -102,7 +106,6 @@ function showData(recipes){
     });
 }
 
-
 function showRecipes(recipesJSON){
     let productClone;
   
@@ -114,31 +117,36 @@ function showRecipes(recipesJSON){
           productClone.querySelector(".recipes_img").alt = `Picture of a ${recipe.title_name} the product`;
           productClone.querySelector(".recipes_name").textContent = recipe.title_name;
 
-         
-          // recipesContainer.appendChild(productClone);
-          if(recipe.january === 1) {
-            document.querySelector(".recipesWinter_container").appendChild(productClone);
-          } 
+          if(recipe){
+            ${recipesURL}?seasons=ilike.*winter*;
+          }
+          recipesContainer.appendChild(productClone);
 
-          if(recipe.february === 1) {
-            document.querySelector(".recipesWinter_container").appendChild(productClone);
-          } 
+
+
+        //   if(recipe.january === 1) {
+        //     document.querySelector(".recipesWinter_container").appendChild(productClone);
+        //   } 
+
+        //   if(recipe.february === 1) {
+        //     document.querySelector(".recipesWinter_container").appendChild(productClone);
+        //   } 
           
-         if (recipe.march === 1) {
-            document.querySelector(".recipesSpring_container").appendChild(productClone);
-          } 
+        //  if (recipe.march === 1) {
+        //     document.querySelector(".recipesSpring_container").appendChild(productClone);
+        //   } 
           
-          if (recipe.april === 1) {
-            document.querySelector(".recipesSpring_container").appendChild(productClone);
-          } 
+        //   if (recipe.april === 1) {
+        //     document.querySelector(".recipesSpring_container").appendChild(productClone);
+        //   } 
 
-          if (recipe.may === 1) {
-            document.querySelector(".recipesSpring_container").appendChild(productClone);
-          } 
+        //   if (recipe.may === 1) {
+        //     document.querySelector(".recipesSpring_container").appendChild(productClone);
+        //   } 
 
-          if (recipe.june === 1) {
-            document.querySelector(".recipesSummer_container").appendChild(productClone);
-          } 
+        //   if (recipe.june === 1) {
+        //     document.querySelector(".recipesSummer_container").appendChild(productClone);
+        //   } 
           
           // else if (recipe.seasons_autumn === 4){
           //   document.querySelector(".recipesAutumn_container").appendChild(productClone);
