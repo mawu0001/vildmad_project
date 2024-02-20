@@ -27,7 +27,8 @@ p {
   max-width: 65ch;
 }
 
-body {}
+body {
+}
 
 .seasons {
   padding: 2rem;
@@ -38,22 +39,30 @@ body {}
   text-transform: uppercase;
 }
 
+.seasons p {
+  text-align: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  max-width: 100%;
+}
+
 #winter_hero,
 #spring_hero,
 #summer_hero,
 #autumn_hero {
   border-radius: 0;
   width: 100%;
-}
-
-.opacity {
+  background-color: black;
   opacity: 40%;
 }
 
-.art_winter {
+/* .opacity {
+  opacity: 40%;
+} */
+
+article {
   position: relative;
 }
-
 .winter_txt {
   position: absolute;
   top: 25%;
@@ -105,33 +114,30 @@ body {}
   margin-left: 0.5rem;
 }
 
+.plantImg {
+  border-radius: 50%;
+  background: #83b7c7;
+  box-shadow: 5px 5px 21px #344950, -5px -5px 21px #d2ffff;
+}
+
+.plant_title {
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
 .flex {
   display: flex;
   justify-content: center;
 }
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  list-style: none;
-}
-
-.menucardflex1,
-.planContainer1 {
+#december_container,
+#januar_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
 
-.flexitem1 {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: 700px) {
-  /* .mr {
+  /* .plant_title {
     margin-right: 8rem;
   } */
 
@@ -139,8 +145,7 @@ li {
     display: grid;
   }
 
-  .menucardflex1,
-  .planContainer1 {
+  #januar_container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
