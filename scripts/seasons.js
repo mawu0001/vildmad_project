@@ -66,7 +66,13 @@ function showMenu4() {
   menu4Knap.firstElementChild.classList.add("selected");
 }
 
-fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants", {
+const params = new URLSearchParams(window.location.search);
+const season = params.get("season");
+console.log(season);
+
+const url = `https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants?seasons=ilike.*${season}*`;
+
+fetch(url, {
   method: "GET",
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8",
@@ -91,7 +97,7 @@ function showPlants(plantJSON) {
       //   document.querySelector("#december_container").appendChild(copy);
     }
 
-    document.querySelector("#december_container").appendChild(copy);
+    document.querySelector(`#container`).appendChild(copy);
   });
 }
 
