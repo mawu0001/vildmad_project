@@ -34,6 +34,7 @@ nav {
 
 .plant_description {
   line-height: 1.3rem;
+  margin: auto;
 }
 
 .plant_description h1 {
@@ -94,4 +95,21 @@ h2 {
   padding: 15px 30px;
   box-shadow: 2px 2px 10px 1px black;
   border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .icon_img {
+    width: 6rem;
+    margin: auto;
+  }
+  .plant_description h1 {
+    margin-bottom: 60px;
+  }
+
+  .text_span {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    line-height: 1.3rem;
+  }
 }
