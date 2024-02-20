@@ -1,3 +1,4 @@
+/* nav */
 .mainNav {
   display: flex;
   align-items: center;
@@ -21,6 +22,8 @@
 nav {
   margin-right: 4rem;
 }
+
+/* slut nav */
 
 .front_img {
   position: relative;
