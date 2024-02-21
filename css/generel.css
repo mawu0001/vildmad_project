@@ -126,7 +126,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #f00;
+  color: var(--accent_col);
 }
 
 .burger {
