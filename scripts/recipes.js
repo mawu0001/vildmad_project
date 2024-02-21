@@ -143,9 +143,11 @@ function showRecipes(recipesJSON){
       recipesJSON.forEach((recipe) => {
           console.log("recipe", recipe);
           productClone = recipesTemplate.cloneNode(true).content;
+          productClone.querySelector("a").href = `recipe.html?id=${recipe.id}`;
           productClone.querySelector(".recipes_img").src = recipe.img;
           productClone.querySelector(".recipes_img").alt = `Picture of a ${recipe.title_name} the product`;
           productClone.querySelector(".recipes_name").textContent = recipe.title_name;
+          productClone.querySelector(".link").setAttribute("href", `recipe.html?id=${recipe.id}`);
 
        if(actualSeason == "winter"){
         if(recipe.TOY.includes(actualSeason)){
