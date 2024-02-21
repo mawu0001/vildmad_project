@@ -20,6 +20,7 @@ function showPlant(plant) {
   document.querySelector(".p_where").textContent = plant[0].Whereto;
   document.querySelector(".p_how").textContent = plant[0].pickit;
   document.querySelector(".p_basket").textContent = plant[0].spotit;
+  document.querySelector(".months").textContent = plant[0].months;
 }
 
 // ("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8");
