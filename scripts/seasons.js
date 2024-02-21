@@ -134,9 +134,12 @@ function showPlants(plantsJSON) {
     productClone.querySelector(".plantImg").src = plant.profile_image;
     productClone.querySelector(".plantImg").alt = `Picture of a ${plant.title}`;
     productClone.querySelector(".plant_title").textContent = plant.title;
-    productClone.querySelector(".link").setAttribute("href", `plant.html?id=${plant.id}`);
+    productClone
+      .querySelector(".link")
+      .setAttribute("href", `plant.html?id=${plant.id}`);
 
     if (actualSeason == "winter") {
+      productClone.querySelector(".plantImg").classList.add("shadow1");
       if (plant.TOY.includes(actualSeason)) {
         winterContainer.appendChild(productClone);
       }
