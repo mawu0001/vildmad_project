@@ -4,17 +4,25 @@
   grid-template-columns: repeat(2, 1fr);
   padding-left: 3rem;
   padding-bottom: 3rem;
+  line-height: 2.5rem;
 }
 
 .info {
   order: 2;
   margin-left: 4rem;
+  text-transform: capitalize;
 }
 
 .directions {
   margin-left: 3rem;
   margin-right: 4rem;
   width: 70%;
+  line-height: 2.5rem;
+  margin: auto;
+}
+
+.directions_indhold {
+  max-width: 700px;
 }
 
 .hero_image {
@@ -41,10 +49,12 @@
 
 .h1 h1 {
   font-size: 2rem;
+  margin-left: 3.5rem;
+  text-transform: capitalize;
 }
 
 ol {
-  line-height: 1.5;
+  line-height: 2rem;
 }
 
 li {
@@ -53,7 +63,6 @@ li {
 
 ul {
   list-style-type: none;
-  line-height: 1.5;
 }
 
 .info {
@@ -84,4 +93,10 @@ ul {
 .grid_1-1 {
   padding-top: 2rem;
   padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .directions {
+    margin: 10px 60px;
+  }
 }
