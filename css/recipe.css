@@ -1,4 +1,5 @@
 @media (min-width: 700px) {
+
   /*Header desktop*/
   .mainNav {
     display: flex;
@@ -7,16 +8,19 @@
     background-color: var(--background_col);
     padding: 1rem;
   }
+
   .mainNav img {
     padding-left: 2rem;
     width: 67%;
   }
+
   .mainNav a {
     text-decoration: none;
     color: var(--font_col);
     padding-right: 2rem;
     font-size: 1rem;
   }
+
   nav {
     margin-right: 4rem;
   }
@@ -28,17 +32,21 @@
     justify-content: space-between;
     padding-top: 2rem;
   }
+
   .footer_logo img {
     width: 30%;
     padding-bottom: 2rem;
   }
+
   .footer_ikoner img {
     width: 30%;
   }
+
   footer {
     padding-left: 6rem;
     padding-right: 6rem;
   }
+
   /*difficulty och ingredients styles*/
   .grid_1-1 {
     display: grid;
@@ -46,10 +54,12 @@
     padding-left: 3rem;
     padding-bottom: 3rem;
   }
+
   .info {
     order: 2;
     margin-left: 4rem;
   }
+
   .directions {
     margin-left: 3rem;
     margin-right: 4rem;
@@ -58,6 +68,7 @@
 }
 
 @media (max-width: 700px) {
+
   /*footer mobil*/
   footer {
     display: flex;
@@ -69,23 +80,27 @@
   .footer_ikoner img {
     width: 20%;
   }
+
   /*header i mobil*/
   .mainNav img {
     padding-left: 2rem;
     width: 40%;
   }
 }
+
 /*form style*/
 form {
   display: flex;
   flex-direction: column;
   width: 12rem;
 }
+
 input {
   margin-top: 0.2rem;
   margin-bottom: 0.8rem;
   width: 100%;
 }
+
 input.send {
   background-color: var(--accent_col);
   color: var(--font_col);
@@ -99,18 +114,23 @@ input.send {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  max-width: 100%;
 }
+
 /* h1 styling */
 .h1 {
   background-color: var(--accent_col);
   padding: 1rem;
 }
+
 .h1 h1 {
   font-size: 2rem;
 }
+
 ol {
   line-height: 1.5;
 }
+
 li {
   padding-bottom: 0.5rem;
 }
@@ -119,6 +139,7 @@ ul {
   list-style-type: none;
   line-height: 1.5;
 }
+
 .info {
   padding-left: 2rem;
   padding-bottom: 3rem;
@@ -128,13 +149,16 @@ ul {
   padding-left: 2rem;
   padding-right: 1rem;
 }
+
 .directions {
   padding-left: 2rem;
   padding-bottom: 3rem;
 }
+
 .info h2 {
   padding-top: 1rem;
 }
+
 .ingredients h2,
 .directions h2 {
   padding-top: 1rem;
