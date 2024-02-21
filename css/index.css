@@ -78,6 +78,7 @@ nav {
 }
 
 p {
+  margin: 1px auto;
   padding: 30px;
   padding-top: 65px;
   line-height: 1.5rem;
