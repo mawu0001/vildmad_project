@@ -25,16 +25,16 @@ nav {
 
 /* slut nav */
 
-.plant_div {
-  position: relative;
+.plant_img {
   overflow: hidden;
-  width: auto;
-  height: 20rem;
+  height: 16rem;
+  position: relative;
 }
 
 .hero_img_plant {
-  width: auto;
-  margin: auto;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .plant_container {
@@ -117,6 +117,9 @@ h2 {
 }
 
 @media screen and (min-width: 700px) {
+  .plant_img {
+    height: 30rem;
+  }
   .icon_img {
     width: 6rem;
     margin: auto;
