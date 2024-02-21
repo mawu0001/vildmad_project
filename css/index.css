@@ -47,10 +47,10 @@ nav {
 }
 
 .mascot_wawe {
-  width: 4rem;
+  width: 6rem;
   height: auto;
   position: absolute;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .section_intro {
@@ -79,6 +79,7 @@ nav {
 
 p {
   padding: 30px;
+  padding-top: 65px;
   line-height: 1.5rem;
   max-width: 65ch;
 }
@@ -123,7 +124,7 @@ a {
   }
   .mascot_wawe {
     display: block;
-    width: 15rem;
+    width: 17rem;
     height: auto;
     position: absolute;
   }
