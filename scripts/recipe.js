@@ -1,7 +1,6 @@
 const parameter = new URLSearchParams(window.location.search);
 const id = parameter.get("id");
 
-
 fetch(`https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipe?id=eq.${id}`, {
   method: "GET",
   headers: {
@@ -14,12 +13,12 @@ fetch(`https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipe?id=eq.${id}`, {
   function showRecipe(recipe) {
     console.log(recipe);
   
-    // document.querySelector(".plant_titel").textContent = plant[0].title;
-    // document.querySelector(".p_description").textContent = plant[0].description;
-    // document.querySelector(".hero_img_plant").src = plant[0].plant_heroimg;
-    // document.querySelector(".description_img").src = plant[0].profile_image;
-    // document.querySelector(".p_where").textContent = plant[0].Whereto;
-    // document.querySelector(".p_how").textContent = plant[0].pickit;
-    // document.querySelector(".p_basket").textContent = plant[0].spotit;
+    document.querySelector(".hero_img").src = recipe[0].img;
+    document.querySelector(".h1").textContent = recipe[0].title_name;
+    document.querySelector(".difficulty").textContent = recipe[0].difficulty;
+    document.querySelector(".cook").textContent = recipe[0].cooktime;
+    document.querySelector(".portions").textContent = recipe[0].portions;
+    document.querySelector(".ingredients").textContent = recipe[0].ingredients;
+    document.querySelector(".directions").textContent = recipe[0].directions;
   }
   
