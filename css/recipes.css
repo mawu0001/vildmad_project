@@ -27,6 +27,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 2rem;
 }
 
 section h2 {
@@ -99,6 +100,7 @@ section h2 {
   .recipesAutumn_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
   }
 }
 

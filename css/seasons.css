@@ -113,7 +113,19 @@ article {
 
 .plantImg {
   border-radius: 50%;
+}
+
+.shadow1 {
   box-shadow: 5px 5px 21px #344950, -5px -5px 21px #d2ffff;
+}
+.shadow2 {
+  box-shadow: 5px 5px 21px #868d5d, -5px -5px 21px #f4ffa9;
+}
+.shadow3 {
+  box-shadow: 5px 5px 21px #b39341, -5px -5px 21px #ffff75;
+}
+.shadow4 {
+  box-shadow: 5px 5px 21px #a06133, -5px -5px 21px #ffaf5d;
 }
 
 .plant_title {

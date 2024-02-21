@@ -146,18 +146,21 @@ function showPlants(plantsJSON) {
     }
 
     if (actualSeason == "spring") {
+      productClone.querySelector(".plantImg").classList.add("shadow2");
       if (plant.TOY.includes(actualSeason)) {
         springContainer.appendChild(productClone);
       }
     }
 
     if (actualSeason == "summer") {
+      productClone.querySelector(".plantImg").classList.add("shadow3");
       if (plant.TOY.includes(actualSeason)) {
         summerContainer.appendChild(productClone);
       }
     }
 
     if (actualSeason == "autumn") {
+      productClone.querySelector(".plantImg").classList.add("shadow4");
       if (plant.TOY.includes(actualSeason)) {
         autumnContainer.appendChild(productClone);
       }
