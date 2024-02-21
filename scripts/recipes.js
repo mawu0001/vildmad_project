@@ -98,6 +98,7 @@ let springContainer;
 let summerContainer;
 let autumnContainer;
 
+//fetcher dataen først og efterfølgende tilkobler den på funktionen
 // fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipes", {
 //     method: "GET",
 //     headers: {
@@ -120,8 +121,7 @@ function showData(recipes){
     autumnContainer = document.querySelector(".recipesAutumn_container");
 
 
-    // console.log("recipesWinter_container", recipesContainer)
-
+    //fetcher dataen i funktionen
     fetch(recipesURL)
     .then(function (response) {
         return response.json();
@@ -138,13 +138,11 @@ function showRecipes(recipesJSON){
   summerContainer.innerHTML = ""
   autumnContainer.innerHTML = ""
 
-
     let productClone;
   
       recipesJSON.forEach((recipe) => {
           console.log("recipe", recipe);
           productClone = recipesTemplate.cloneNode(true).content;
-        //   productClone.querySelector("a").href = `product.html?id=${product.id}`;
           productClone.querySelector(".recipes_img").src = recipe.img;
           productClone.querySelector(".recipes_img").alt = `Picture of a ${recipe.title_name} the product`;
           productClone.querySelector(".recipes_name").textContent = recipe.title_name;
