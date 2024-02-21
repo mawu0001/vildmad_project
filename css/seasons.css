@@ -30,6 +30,9 @@ p {
 body {
 }
 
+.link {
+  text-decoration: none;
+}
 .seasons {
   padding: 2rem;
 }
