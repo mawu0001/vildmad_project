@@ -19,9 +19,16 @@
       <img src="images/logo.svg" alt="Vild Mad logo" />
     </a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="seasons.html">Seasons</a>
-      <a href="recipes.html">Recipes</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="seasons.html">Seasons</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
   </header>
   <main>
@@ -57,20 +64,19 @@
       </div>
     </section>
   </main>
-  <footer class="logo_form">
-    <div class="logo_ikoner">
-      <!--logo-->
-      <div class="footer_logo">
-        <img src="images/logo.svg" alt="Vild Mad logo" />
-      </div>
+  <footer>
+    <!--logo-->
+    <div class="logo">
+      <img class="footer_logo" src="images/logo.svg" alt="Vild Mad logo" />
       <div class="footer_ikoner">
         <img src="images/ikoner.svg" alt="ikoner" />
       </div>
     </div>
     <!--form-->
     <div class="form">
-      <h3>Sign up for the</h3>
+      <h3>Join the</h3>
       <form name="contact" netlify>
+        <img class="footer_logo" src="images/foragingclub.svg" alt="" />
         <label for="name">Name: <input type="text" id="name" name="name" />
         </label>
         <label for="email">Email: <input type="email" id="email" name="email" /></label>
@@ -78,6 +84,7 @@
       </form>
     </div>
   </footer>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>

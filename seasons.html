@@ -2,119 +2,113 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
-    <link rel="stylesheet" href="css/generel.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/seasons.css" />
-    <title>Seasons</title>
-  </head>
-  <body>
-    <header class="mainNav">
-      <a href="index.html">
-        <img src="images/logo.svg" alt="Vild Mad logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/generel.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/seasons.css" />
+  <title>Seasons</title>
+</head>
+
+<body>
+  <header class="mainNav">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Vild Mad logo" />
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="seasons.html">Seasons</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero_img">
+      <img src="images/hero_img_recipies.jpg" alt="AI styled closeup overgrown skillet cooking mushrooms" />
+    </section>
+    <section class="h1">
+      <h1>RECIPES</h1>
+    </section>
+    <!-- menu knapper & sider -->
+    <div class="flex">
+      <a href="#section" id="menu1Knap" onclick="showMenu1()">
+        <div class="CTA2">Winter</div>
       </a>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="seasons.html">Seasons</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero_img">
-        <img
-          src="images/hero_img_recipies.jpg"
-          alt="AI styled closeup overgrown skillet cooking mushrooms"
-        />
-      </section>
-      <section class="h1">
-        <h1>RECIPES</h1>
-      </section>
-      <!-- menu knapper & sider -->
-      <div class="flex">
-        <a href="#section" id="menu1Knap" onclick="showMenu1()">
-          <div class="CTA2">Winter</div>
-        </a>
-        <a href="#section" id="menu2Knap" onclick="showMenu2()">
-          <div class="CTA2">Spring</div>
-        </a>
-        <a href="#section" id="menu3Knap" onclick="showMenu3()">
-          <div class="CTA2">Summer</div>
-        </a>
-        <a href="#section" id="menu4Knap" onclick="showMenu4()">
-          <div class="CTA2">Autumn</div>
-        </a>
-      </div>
-      <section id="menu1">
-        <h2>Winter</h2>
-        <div class="winter_container"></div>
-      </section>
+      <a href="#section" id="menu2Knap" onclick="showMenu2()">
+        <div class="CTA2">Spring</div>
+      </a>
+      <a href="#section" id="menu3Knap" onclick="showMenu3()">
+        <div class="CTA2">Summer</div>
+      </a>
+      <a href="#section" id="menu4Knap" onclick="showMenu4()">
+        <div class="CTA2">Autumn</div>
+      </a>
+    </div>
+    <section id="menu1">
+      <h2>Winter</h2>
+      <div class="winter_container"></div>
+    </section>
 
-      <!-- spring -->
-      <section id="menu2">
-        <h2>Spring</h2>
-        <div class="spring_container"></div>
-      </section>
+    <!-- spring -->
+    <section id="menu2">
+      <h2>Spring</h2>
+      <div class="spring_container"></div>
+    </section>
 
-      <!--summer-->
-      <section id="menu3">
-        <h2>Summer</h2>
-        <div class="summer_container"></div>
-      </section>
+    <!--summer-->
+    <section id="menu3">
+      <h2>Summer</h2>
+      <div class="summer_container"></div>
+    </section>
 
-      <!--autumn-->
-      <section id="menu4">
-        <h2>Autumn</h2>
-        <div class="autumn_container"></div>
-      </section>
-    </main>
-    <footer>
-      <!--logo-->
-      <div class="logo">
-        <img class="footer_logo" src="images/logo.svg" alt="Vild Mad logo" />
-        <div class="footer_ikoner">
-          <img src="images/ikoner.svg" alt="ikoner" />
-        </div>
+    <!--autumn-->
+    <section id="menu4">
+      <h2>Autumn</h2>
+      <div class="autumn_container"></div>
+    </section>
+  </main>
+  <footer>
+    <!--logo-->
+    <div class="logo">
+      <img class="footer_logo" src="images/logo.svg" alt="Vild Mad logo" />
+      <div class="footer_ikoner">
+        <img src="images/ikoner.svg" alt="ikoner" />
       </div>
-      <!--form-->
-      <div class="form">
-        <h3>Join the</h3>
-        <form name="contact" netlify>
-          <img class="footer_logo" src="images/foragingclub.svg" alt="" />
-          <label for="name"
-            >Name: <input type="text" id="name" name="name" />
-          </label>
-          <label for="email"
-            >Email: <input type="email" id="email" name="email"
-          /></label>
-          <input class="send" type="submit" />
-        </form>
-      </div>
-    </footer>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/seasons.js"></script>
-  </body>
+    </div>
+    <!--form-->
+    <div class="form">
+      <h3>Join the</h3>
+      <form name="contact" netlify>
+        <img class="footer_logo" src="images/foragingclub.svg" alt="" />
+        <label for="name">Name: <input type="text" id="name" name="name" />
+        </label>
+        <label for="email">Email: <input type="email" id="email" name="email" /></label>
+        <input class="send" type="submit" />
+      </form>
+    </div>
+  </footer>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/seasons.js"></script>
+</body>
+
 </html>
 
 <template class="plantTemplate">
   <article>
     <div class="menucard">
       <a class="link" href="plant.html">
-        <img
-          class="plantImg"
-          class="shadow"
+        <img class="plantImg" class="shadow"
           src="https://vildmadv2.vps.webdock.io/application/files/1916/2436/8346/Bog_ravarkort_1.png"
-          alt="Beech plant"
-        />
+          alt="Beech plant" />
         <p class="plant_title">Beech</p>
       </a>
     </div>
