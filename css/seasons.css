@@ -129,9 +129,8 @@ article {
   display: flex;
   justify-content: center;
 }
-#december_container,
-#januar_container,
-#container {
+
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -146,14 +145,19 @@ article {
     display: grid;
   }
 
-  #december_container,
-  #januar_container,
-  #container {
+  .winter_container,
+  .spring_container,
+  .summer_container,
+  .autumn_container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  /* .menu_content {
+    height: 200px;
+  } */
 }
 
 img {
