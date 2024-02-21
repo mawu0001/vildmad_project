@@ -17,7 +17,6 @@ const menu4Knap = document.querySelector("#menu4Knap");
 function sidenVises() {
   showMenu1();
 }
-
 function showMenu1() {
   //Gør menu synlig
   menu1.style.display = "inherit";
@@ -34,7 +33,6 @@ function showMenu1() {
   actualSeason = "winter";
   showPlants(data);
 }
-
 function showMenu2() {
   menu1.style.display = "none";
   menu2.style.display = "inherit";
@@ -146,18 +144,21 @@ function showPlants(plantsJSON) {
     }
 
     if (actualSeason == "spring") {
+      productClone.querySelector(".plantImg").classList.add("shadow2");
       if (plant.TOY.includes(actualSeason)) {
         springContainer.appendChild(productClone);
       }
     }
 
     if (actualSeason == "summer") {
+      productClone.querySelector(".plantImg").classList.add("shadow3");
       if (plant.TOY.includes(actualSeason)) {
         summerContainer.appendChild(productClone);
       }
     }
 
     if (actualSeason == "autumn") {
+      productClone.querySelector(".plantImg").classList.add("shadow4");
       if (plant.TOY.includes(actualSeason)) {
         autumnContainer.appendChild(productClone);
       }
