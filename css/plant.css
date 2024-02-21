@@ -25,11 +25,16 @@ nav {
 
 /* slut nav */
 
+.plant_div {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: 20rem;
+}
+
 .hero_img_plant {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 27/9;
-  background-size: cover;
+  width: auto;
+  margin: auto;
 }
 
 .plant_container {
