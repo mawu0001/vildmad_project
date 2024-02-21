@@ -38,8 +38,8 @@ nav {
 
 .hero_img_text {
   position: absolute;
-  top: 50px;
-  left: 75px;
+  top: 100px;
+  left: 200px;
   z-index: 1;
   color: var(--font_col);
   border: 1px solid var(--font_col);
@@ -47,7 +47,7 @@ nav {
 }
 
 .mascot_wawe {
-  width: 6rem;
+  width: 7rem;
   height: auto;
   position: absolute;
   margin-left: 5px;
@@ -80,7 +80,7 @@ nav {
 p {
   margin: 1px auto;
   padding: 30px;
-  padding-top: 65px;
+  padding-top: 75px;
   line-height: 1.5rem;
   max-width: 65ch;
 }
@@ -100,9 +100,16 @@ a {
 
 @media screen and (min-width: 700px) {
   .section_intro {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
     padding: 100px;
+    place-items: center;
   }
 
+  .section_text {
+    grid-column: 2;
+  }
   .frontpage_menu {
     display: flex;
     flex-direction: row;
@@ -121,23 +128,43 @@ a {
 
   .section_intro h1 {
     text-align: center;
-    padding-right: 190px;
   }
   .mascot_wawe {
+    position: relative;
     display: block;
-    width: 17rem;
+    width: 22rem;
     height: auto;
-    position: absolute;
   }
 
   .hero_img_text {
     position: absolute;
-    top: 325px;
-    left: 50px;
+    top: 90px;
+    left: 90px;
     z-index: 1;
     color: var(--font_col);
     border: 1px solid var(--font_col);
     padding: 10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero_img_text {
+    top: 110px;
+    left: 175px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .hero_img_text {
+    top: 150px;
+    left: 280px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero_img_text {
+    top: 210px;
+    left: 440px;
   }
 }
 
@@ -155,7 +182,8 @@ footer.logo_form {
 }
 
 .footer_ikoner img {
-  width: 30%;
+  width: 70%;
+  margin: auto;
 }
 
 footer {
