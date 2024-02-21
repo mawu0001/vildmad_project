@@ -1,5 +1,5 @@
 /* nav */
-.mainNav {
+/* .mainNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +10,7 @@
 .mainNav img {
   padding-left: 2rem;
   width: 67%;
-}
+} */
 
 .mainNav a {
   text-decoration: none;
@@ -179,16 +179,6 @@ footer.logo_form {
 .footer_logo img {
   width: 30%;
   padding-bottom: 2rem;
-}
-
-.footer_ikoner img {
-  width: 70%;
-  margin: auto;
-}
-
-footer {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 
 @media (max-width: 700px) {
