@@ -12,7 +12,16 @@
     <title>Seasons</title>
   </head>
   <body>
-    <header></header>
+    <header class="mainNav">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Vild Mad logo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="seasons.html">Seasons</a>
+      <a href="recipes.html">Recipes</a>
+    </nav>
+  </header>
     <main>
       <article class="seasons">
         <h1>Seasons</h1>
@@ -24,16 +33,16 @@
       </article>
       <!-- menu knapper & sider -->
       <div class="flex">
-        <a href="#section" id="menu1Knap" onclick="showMenu1()">
+        <a href="?season=winter" id="menu1Knap" onclick="showMenu1()">
           <div class="CTA2">winter</div>
         </a>
-        <a href="#section" id="menu2Knap" onclick="showMenu2()">
+        <a href="?season=spring" id="menu2Knap" onclick="showMenu2()">
           <div class="CTA2">spring</div>
         </a>
-        <a href="#section" id="menu3Knap" onclick="showMenu3()">
+        <a href="?season=summer" id="menu3Knap" onclick="showMenu3()">
           <div class="CTA2">summer</div>
         </a>
-        <a href="#section" id="menu4Knap" onclick="showMenu4()">
+        <a href="?season=autumn" id="menu4Knap" onclick="showMenu4()">
           <div class="CTA2">autumn</div>
         </a>
       </div>
@@ -54,11 +63,11 @@
             </p>
           </div>
         </article>
-        <section>
-          <h2>December</h2>
-          <div id="december_container"></div>
-        </section>
-        <section>
+      
+          <!-- <h2>December</h2> -->
+          <div id="container"></div>
+    
+        <!-- <section>
           <h2>January</h2>
           <div id="januar_container"></div>
         </section>
@@ -66,7 +75,7 @@
           <h2>February</h2>
           <div id="february_container"></div>
         </section>
-      </section>
+      </section> -->
 
       <!-- spring -->
       <section id="menu2">
@@ -95,7 +104,7 @@
         </article>
         <section>
           <h2>March</h2>
-          <div id="march_container"></div>
+          <div id="container"></div>
         </section>
         <section>
           <h2>April</h2>
@@ -183,7 +192,29 @@
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <!--logo-->
+      <div class="logo">
+        <img class="footer_logo" src="images/logo.svg" alt="Vild Mad logo" />
+        <div class="footer_ikoner">
+          <img src="images/ikoner.svg" alt="ikoner" />
+        </div>
+      </div>
+      <!--form-->
+      <div class="form">
+        <h3>Join the foraging club</h3>
+        <form name="contact" netlify>
+          <img class="footer_logo" src="images/foragingclub.svg" alt="" />
+          <label for="name"
+            >Name: <input type="text" id="name" name="name" />
+          </label>
+          <label for="email"
+            >Email: <input type="email" id="email" name="email"
+          /></label>
+          <input class="send" type="submit" />
+        </form>
+      </div>
+    </footer>
     <script src="scripts/seasons.js"></script>
   </body>
 </html>

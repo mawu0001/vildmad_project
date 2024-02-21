@@ -63,7 +63,7 @@ body {
 article {
   position: relative;
 }
-.winter_txt {
+.article_txt {
   position: absolute;
   top: 25%;
   padding: 2rem;
@@ -130,7 +130,8 @@ article {
   justify-content: center;
 }
 #december_container,
-#januar_container {
+#januar_container,
+#container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -145,7 +146,9 @@ article {
     display: grid;
   }
 
-  #januar_container {
+  #december_container,
+  #januar_container,
+  #container {
     display: flex;
     justify-content: space-around;
     flex-direction: row;

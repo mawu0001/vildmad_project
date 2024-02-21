@@ -46,6 +46,13 @@ nav {
   padding: 10px;
 }
 
+.mascot_wawe {
+  display: block;
+  width: 15rem;
+  height: auto;
+  position: absolute;
+}
+
 .section_intro {
   background-color: var(--accent_col);
   text-align: left;

@@ -39,6 +39,22 @@
     padding-left: 6rem;
     padding-right: 6rem;
   }
+  /*difficulty och ingredients styles*/
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+  }
+  .info {
+    order: 2;
+    margin-left: 4rem;
+  }
+  .directions {
+    margin-left: 3rem;
+    margin-right: 4rem;
+    width: 70%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -92,7 +108,40 @@ input.send {
 .h1 h1 {
   font-size: 2rem;
 }
+ol {
+  line-height: 1.5;
+}
+li {
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 1.5;
+}
+.info {
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+
+.ingredients {
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+.directions {
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+.info h2 {
+  padding-top: 1rem;
+}
+.ingredients h2,
+.directions h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .grid_1-1 {
-  display: flex;
-  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
