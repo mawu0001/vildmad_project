@@ -13,183 +13,68 @@
   </head>
   <body>
     <header class="mainNav">
-    <a href="index.html">
-      <img src="images/logo.svg" alt="Vild Mad logo" />
-    </a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="seasons.html">Seasons</a>
-      <a href="recipes.html">Recipes</a>
-    </nav>
-  </header>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="Vild Mad logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seasons.html">Seasons</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
     <main>
-      <article class="seasons">
-        <h1>Seasons</h1>
-        <p>
-          In towns, buildings soak up the sun's warmth, making it hotter than
-          countryside places. That's why in towns, the time for picking fruits
-          and veggies starts earlier and lasts longer than in the countryside.
-        </p>
-      </article>
+      <section class="hero_img">
+        <img
+          src="images/hero_img_recipies.jpg"
+          alt="AI styled closeup overgrown skillet cooking mushrooms"
+        />
+      </section>
+      <section class="h1">
+        <h1>RECIPES</h1>
+      </section>
       <!-- menu knapper & sider -->
       <div class="flex">
-        <a href="?season=winter" id="menu1Knap" onclick="showMenu1()">
-          <div class="CTA2">winter</div>
+        <a href="#section" id="menu1Knap" onclick="showMenu1()">
+          <div class="CTA2">Winter</div>
         </a>
-        <a href="?season=spring" id="menu2Knap" onclick="showMenu2()">
-          <div class="CTA2">spring</div>
+        <a href="#section" id="menu2Knap" onclick="showMenu2()">
+          <div class="CTA2">Spring</div>
         </a>
-        <a href="?season=summer" id="menu3Knap" onclick="showMenu3()">
-          <div class="CTA2">summer</div>
+        <a href="#section" id="menu3Knap" onclick="showMenu3()">
+          <div class="CTA2">Summer</div>
         </a>
-        <a href="?season=autumn" id="menu4Knap" onclick="showMenu4()">
-          <div class="CTA2">autumn</div>
+        <a href="#section" id="menu4Knap" onclick="showMenu4()">
+          <div class="CTA2">Autumn</div>
         </a>
       </div>
       <section id="menu1">
-        <article>
-          <img
-            id="winter_hero"
-            class="opacity"
-            src="images/hero_winter.jpg"
-            alt=""
-          />
-          <div class="article_txt">
-            <h2>Winter</h2>
-            <p>
-              In cold weather, plants like sheep’s sorrel and garlic mustard
-              continue to grow, and hairy bittercress can even survive very
-              chilly winters!
-            </p>
-          </div>
-        </article>
-      
-          <!-- <h2>December</h2> -->
-          <div id="container"></div>
-    
-        <!-- <section>
-          <h2>January</h2>
-          <div id="januar_container"></div>
-        </section>
-        <section>
-          <h2>February</h2>
-          <div id="february_container"></div>
-        </section>
-      </section> -->
+        <h2>Winter</h2>
+        <div class="winter_container"></div>
+      </section>
 
       <!-- spring -->
       <section id="menu2">
-        <article>
-          <img
-            id="spring_hero"
-            class="opacity"
-            src="images/hero_spring.jpg"
-            alt=""
-          />
-          <div class="article_txt">
-            <h2>Spring</h2>
-            <p>
-              In springtime, herbs start growing leaves. In parks and places
-              with soil and trees, you'll see the first bulb plants like ramson
-              and sand leek popping up. There's also wood sorrel, which you can
-              find all year round. In playgrounds and gardens at home, you might
-              spot ground elder, red dead nettle, and garlic mustard. In city
-              parks, you can pick young leaves from trees like spruce, which
-              start growing leaves at the end of April. On grassy lawns, you'll
-              find plants like common sorrel, daisies, and dandelions. Near the
-              sea, you'll see special plants near harbors, and you can even
-              collect seaweed from clean beaches.
-            </p>
-          </div>
-        </article>
-        <section>
-          <h2>March</h2>
-          <div id="container"></div>
-        </section>
-        <section>
-          <h2>April</h2>
-          <div id="april_container"></div>
-        </section>
-        <section>
-          <h2>May</h2>
-          <div id="may_container"></div>
-        </section>
+        <h2>Spring</h2>
+        <div class="spring_container"></div>
       </section>
 
       <!--summer-->
       <section id="menu3">
-        <article>
-          <img
-            id="spring_hero"
-            class="opacity"
-            src="images/hero_summer.jpg"
-            alt=""
-          />
-          <div class="article_txt">
-            <h2>Summer</h2>
-            <p>
-              In summer, you can find tasty flowers like elderflower and sorrel
-              growing near bushes in parks and along paths where people ride
-              bicycles. Roses and rosehips also bloom during this time.
-              Horseradish starts popping up near roads and close to grassy areas
-              where kids play. The cherries on wild cherry trees that line the
-              roads get ripe in the middle of summer. Around the same time,
-              chicory starts growing on the edges of towns, and plants that live
-              in water start growing along lakes, rivers, and seas. Towards the
-              end of summer, some herbs from spring become too hard and not very
-              tasty, but plants like stinging nettles and other leafy greens
-              will keep growing if they're regularly cut down.
-            </p>
-          </div>
-        </article>
-        <section>
-          <h2>June</h2>
-          <div id="june_container"></div>
-        </section>
-        <section>
-          <h2>July</h2>
-          <div id="july_container"></div>
-        </section>
-        <section>
-          <h2>august</h2>
-          <div id="august_container"></div>
-        </section>
+        <h2>Summer</h2>
+        <div class="summer_container"></div>
       </section>
 
       <!--autumn-->
       <section id="menu4">
-        <article>
-          <img
-            id="spring_hero"
-            class="opacity"
-            src="images/hero_autumn.jpg"
-            alt=""
-          />
-          <div class="article_txt">
-            <h2>Autumn</h2>
-            <p>
-              In late summer, you can find yummy blackberries and rowan berries
-              ready to eat. Wild apples and pears, which are like the main
-              fruits of autumn in towns, take until September to be just right.
-              In that same month, mugwort starts blooming in places with dry,
-              sandy soil, like empty lots and the sides of roads. When September
-              and October come around, mushrooms start popping up in forests and
-              parks where old branches and leaves are breaking down.
-            </p>
-          </div>
-        </article>
-        <section>
-          <h2>September</h2>
-          <div id="september_container"></div>
-        </section>
-        <section>
-          <h2>October</h2>
-          <div id="october_container"></div>
-        </section>
-        <section>
-          <h2>November</h2>
-          <div id="november_container"></div>
-        </section>
+        <h2>Autumn</h2>
+        <div class="autumn_container"></div>
       </section>
     </main>
     <footer>
@@ -202,7 +87,7 @@
       </div>
       <!--form-->
       <div class="form">
-        <h3>Join the foraging club</h3>
+        <h3>Join the</h3>
         <form name="contact" netlify>
           <img class="footer_logo" src="images/foragingclub.svg" alt="" />
           <label for="name"
@@ -215,6 +100,7 @@
         </form>
       </div>
     </footer>
+    <script src="scripts/menu.js"></script>
     <script src="scripts/seasons.js"></script>
   </body>
 </html>
