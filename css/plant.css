@@ -55,6 +55,11 @@ nav {
   margin: auto;
 }
 
+.months {
+  text-transform: capitalize;
+  padding: 5px;
+  font-weight: bold;
+}
 .plant_info {
   padding: 30px;
 }
@@ -102,7 +107,7 @@ h2 {
   text-decoration: none;
   color: var(--font_col);
   padding: 15px 30px;
-  box-shadow: 2px 2px 10px 1px black;
+  box-shadow: 2px 2px 10px #000000, -2px -2px 10px #e5f7f7;
   border-radius: 0.5rem;
 }
 
@@ -139,5 +144,8 @@ h2 {
 
   .grid_1-1 {
     margin: 30px;
+  }
+  h2 {
+    padding-left: 295px;
   }
 }
