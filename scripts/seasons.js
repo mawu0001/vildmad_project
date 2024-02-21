@@ -88,23 +88,13 @@ const parameter = new URLSearchParams(window.location.search);
 const seasons = parameter.get("seasons");
 console.log(seasons);
 
-// Konstaere API'en via ULR-link:
+// Konstaere API'en via URL-link:
 const seasonsURL = `https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/plants?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8`;
 let seasonsTemplate;
 let winterContainer;
 let springContainer;
 let summerContainer;
 let autumnContainer;
-
-// fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipes", {
-//     method: "GET",
-//     headers: {
-//         apikey:
-//         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8"
-//     },
-// })
-//     .then(res=>res.json())
-//     .then(showData)
 
 function showData(recipes) {
   console.log(recipes);
@@ -144,6 +134,9 @@ function showPlants(plantsJSON) {
     productClone.querySelector(".plantImg").src = plant.profile_image;
     productClone.querySelector(".plantImg").alt = `Picture of a ${plant.title}`;
     productClone.querySelector(".plant_title").textContent = plant.title;
+    productClone
+      .querySelector(".link")
+      .setAttribute("href", `plant.html?id=${plant.id}`);
 
     if (actualSeason == "winter") {
       if (plant.TOY.includes(actualSeason)) {
