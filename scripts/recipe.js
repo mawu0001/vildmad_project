@@ -1,10 +1,11 @@
 const parameter = new URLSearchParams(window.location.search);
 const id = parameter.get("id");
 
-/* const ingredientsList = recipe[0].ingredients;
+/* const ingredientsList = recipe[0].ingrediens2;
 const ingredientsArray = ingredientsList.split(",");
 console.log(ingredientsArray);
  */
+
 fetch(`https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipes?id=eq.${id}`, {
   method: "GET",
   headers: {
@@ -25,6 +26,7 @@ function showRecipe(recipe) {
   document.querySelector(".portions").textContent = recipe[0].portions;
   document.querySelector(".ingredients_indhold").textContent =
     recipe[0].ingrediens2.forEach(ingrediens);
+
   document.querySelector(".directions_indhold").textContent =
     recipe[0].walkthrough;
 }
