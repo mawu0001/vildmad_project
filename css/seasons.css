@@ -27,9 +27,6 @@ p {
   max-width: 65ch;
 }
 
-body {
-}
-
 .menucard a {
   text-decoration: none;
   color: var(--font_col);
@@ -59,10 +56,6 @@ body {
   background-color: black;
   opacity: 40%;
 }
-
-/* .opacity {
-  opacity: 40%;
-} */
 
 article {
   position: relative;
@@ -101,13 +94,13 @@ article {
   background-color: var(--summer);
 }
 
-#menu4 {
+.autumn_container {
   background-color: var(--autumn);
 }
 
-/* #menu4Knap {
+#menu4Knap {
   background-color: var(--autumn);
-} */
+}
 
 #menu1Knap,
 #menu2Knap,
@@ -120,7 +113,6 @@ article {
 
 .plantImg {
   border-radius: 50%;
-  background: #83b7c7;
   box-shadow: 5px 5px 21px #344950, -5px -5px 21px #d2ffff;
 }
 
@@ -134,22 +126,29 @@ article {
   justify-content: center;
 }
 
+.season_txt {
+  padding: 2rem;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero_img_container {
-  height: 20rem;
+  height: 16rem;
   overflow: hidden;
   position: relative;
 }
 
 .hero_txt_container {
   position: absolute;
-  top: 40%;
+  top: 5%;
+  padding: 2rem;
 }
 
 .hero_img {
   border-radius: 0;
   width: 100%;
   position: absolute;
-  top: -100%;
   opacity: 40%;
 }
 
@@ -159,7 +158,10 @@ article {
   font-weight: 600;
 }
 
-.container {
+.winter_container,
+.spring_container,
+.summer_container,
+.autumn_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -172,6 +174,14 @@ article {
 
   .menucard {
     display: grid;
+  }
+
+  .hero_img_container {
+    height: 16rem;
+  }
+
+  .hero_img {
+    top: -100%;
   }
 
   .winter_container,
