@@ -1,5 +1,8 @@
 window.addEventListener("load", sidenVises);
 
+let actualSeason = "winter";
+let data;
+
 //forkortelser
 const menu1 = document.querySelector("#menu1");
 const menu2 = document.querySelector("#menu2");
@@ -27,6 +30,9 @@ function showMenu1() {
   menu2Knap.firstElementChild.classList = "CTA2";
   menu3Knap.firstElementChild.classList = "CTA2";
   menu4Knap.firstElementChild.classList = "CTA2";
+
+actualSeason = "winter"
+showRecipes(data)
 }
 
 function showMenu2() {
@@ -40,6 +46,9 @@ function showMenu2() {
   menu2Knap.firstElementChild.classList.add("selected");
   menu3Knap.firstElementChild.classList = "CTA2";
   menu4Knap.firstElementChild.classList = "CTA2";
+
+  actualSeason = "spring"
+  showRecipes(data)
 }
 function showMenu3() {
   menu1.style.display = "none";
@@ -52,6 +61,9 @@ function showMenu3() {
   menu2Knap.firstElementChild.classList = "CTA2";
   menu3Knap.firstElementChild.classList.add("selected");
   menu4Knap.firstElementChild.classList = "CTA2";
+
+  actualSeason = "summer"
+  showRecipes(data)
 }
 function showMenu4() {
   menu1.style.display = "none";
@@ -64,6 +76,11 @@ function showMenu4() {
   menu2Knap.firstElementChild.classList = "CTA2";
   menu3Knap.firstElementChild.classList = "CTA2";
   menu4Knap.firstElementChild.classList.add("selected");
+
+  actualSeason = "autumn"
+  showRecipes(data)
+
+
 }
 
 // Fetche dataen fra givne API m. promise:
@@ -76,7 +93,10 @@ console.log(seasons);
 // Konstaere API'en via ULR-link:
 const recipesURL = `https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipes?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJscm5sdGxnbXpjbHpweXVteGxpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc3NjIxODUsImV4cCI6MjAyMzMzODE4NX0.C-m5yj5h1tcMxZ45T0rdWHQJW2wXoyWwA_4Ys8ibSS8`;
 let recipesTemplate;
-let recipesContainer;
+let winterContainer;
+let springContainer;
+let summerContainer;
+let autumnContainer;
 
 // fetch("https://rlrnltlgmzclzpyumxli.supabase.co/rest/v1/recipes", {
 //     method: "GET",
@@ -94,8 +114,13 @@ function showData(recipes){
     recipesTemplate = document.querySelector(".recipes_template");
     console.log("recipes_template", recipesTemplate);
 
-    recipesContainer = document.querySelector(".recipesWinter_container");
-    console.log("recipesWinter_container", recipesContainer)
+    winterContainer = document.querySelector(".recipesWinter_container");
+    springContainer = document.querySelector(".recipesSpring_container");
+    summerContainer = document.querySelector(".recipesSummer_container");
+    autumnContainer = document.querySelector(".recipesAutumn_container");
+
+
+    // console.log("recipesWinter_container", recipesContainer)
 
     fetch(recipesURL)
     .then(function (response) {
@@ -103,10 +128,17 @@ function showData(recipes){
     })
     .then(function (json) {
         showRecipes(json);
+        data = json;
     });
 }
 
 function showRecipes(recipesJSON){
+  winterContainer.innerHTML = ""
+  springContainer.innerHTML = ""
+  summerContainer.innerHTML = ""
+  autumnContainer.innerHTML = ""
+
+
     let productClone;
   
       recipesJSON.forEach((recipe) => {
@@ -117,10 +149,39 @@ function showRecipes(recipesJSON){
           productClone.querySelector(".recipes_img").alt = `Picture of a ${recipe.title_name} the product`;
           productClone.querySelector(".recipes_name").textContent = recipe.title_name;
 
-          if(recipe){
-            ${recipesURL}?seasons=ilike.*winter*;
-          }
-          recipesContainer.appendChild(productClone);
+       if(actualSeason == "winter"){
+        if(recipe.TOY.includes(actualSeason)){
+        winterContainer.appendChild(productClone)
+      }
+      }
+
+      if(actualSeason == "spring"){
+        if(recipe.TOY.includes(actualSeason)){
+        springContainer.appendChild(productClone)
+      }
+      }
+
+      if(actualSeason == "summer"){
+        if(recipe.TOY.includes(actualSeason)){
+        summerContainer.appendChild(productClone)
+      }
+      }
+
+      if(actualSeason == "autumn"){
+        if(recipe.TOY.includes(actualSeason)){
+        autumnContainer.appendChild(productClone)
+      }
+      }
+
+        //   if(recipe.TOY.includes("winter")){
+        //   winterContainer.appendChild(productClone);
+        // }else if(recipe.TOY.includes("spring")){
+        //   springContainer.appendChild(productClone);
+
+        // } else if(recipe.TOY.includes("summer")){
+        //   summerContainer.appendChild(productClone);
+
+        // }
 
 
 
