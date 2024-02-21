@@ -30,8 +30,9 @@ p {
 body {
 }
 
-.link {
+.menucard a {
   text-decoration: none;
+  color: var(--font_col);
 }
 .seasons {
   padding: 2rem;
@@ -76,7 +77,7 @@ article {
   padding: 2rem;
 }
 
-#menu1 {
+.winter_container {
   background-color: var(--winter);
 }
 
@@ -84,7 +85,7 @@ article {
   background-color: var(--winter);
 }
 
-#menu2 {
+.spring_container {
   background-color: var(--spring);
 }
 
@@ -92,7 +93,7 @@ article {
   background-color: var(--spring);
 }
 
-#menu3 {
+.summer_container {
   background-color: var(--summer);
 }
 
@@ -104,9 +105,9 @@ article {
   background-color: var(--autumn);
 }
 
-#menu4Knap {
+/* #menu4Knap {
   background-color: var(--autumn);
-}
+} */
 
 #menu1Knap,
 #menu2Knap,
@@ -131,6 +132,31 @@ article {
 .flex {
   display: flex;
   justify-content: center;
+}
+
+.hero_img_container {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero_txt_container {
+  position: absolute;
+  top: 40%;
+}
+
+.hero_img {
+  border-radius: 0;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  opacity: 40%;
+}
+
+.flex a {
+  text-decoration: none;
+  color: var(--background_col);
+  font-weight: 600;
 }
 
 .container {
